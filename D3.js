@@ -247,9 +247,9 @@ console.log(characters);
   Crea una funzionalità che selezioni un elemento casuale dall'array "starWarsCharacters" e ne stampi in console le proprietà in modo discorsivo (a tuo piacimento).
 */
 
-rand = Math.floor(Math.random() * starWarsCharacters.length);
-randomCharacter = starWarsCharacters[rand];
-ch = randomCharacter;
+const rand = Math.floor(Math.random() * starWarsCharacters.length);
+const randomCharacter = starWarsCharacters[rand];
+const ch = randomCharacter;
 
 console.log(`${ch.name} is a ${ch.gender}, with a height of ${ch.height}cm and a mass of ${ch.mass}kg.`);
 
@@ -277,7 +277,7 @@ if (ch.hair_color === "none") {
   console.log(`${pronoun} has ${ch.hair_color} hair.`);
 }
 
-surface = ch.gender === "robot" ? "surface" : "skin";
+const surface = ch.gender === "robot" ? "surface" : "skin";
 
 console.log(`${possessive} ${surface} color is ${ch.skin_color}.`);
 
